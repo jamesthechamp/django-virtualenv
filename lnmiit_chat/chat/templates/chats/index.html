@@ -4,14 +4,14 @@
 </ul>
 <ul>
 <ul>
-    <li><a id="" href="(% url 'chat_room' chat.id %)"> {{ chat.name }}</a></li>
+    <li><a id="" href="{% url 'chat_room' chat.id %}"> {{ chat.name }}</a></li>
 </ul>
 </ul>
 <ul>{% endfor %}</ul>
 <pre>
- 
+
 {% else %}
- 
+
 No chats are available.
- 
+
 {% endif %}
